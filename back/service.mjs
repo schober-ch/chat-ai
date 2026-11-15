@@ -152,16 +152,22 @@ app.get("/models", async (req, res) => {
   }
 });
 
-// Get placeholder user data
+// Real user data from the identity headers set by httpd (mod_auth_openidc)
 app.get("/user", async (req, res) => {
   try {
+    const name = (req.headers["oidc_claim_name"] || "").trim();
+    const [firstname = "", ...rest] = name.split(/\s+/);
+    const username = req.headers["oidc_claim_preferred_username"] || "";
+    if (!username) {
+      return res.status(401).json({ error: "Not authenticated" });
+    }
     res.status(200).json({
-      email: "user@example.com",
-      firstname: "Sample",
-      lastname: "User",
-      org: "GWD",
-      organization: "GWDG",
-      username: "sample-user",
+      email: req.headers["oidc_claim_email"] || "",
+      firstname,
+      lastname: rest.join(" "),
+      org: process.env.ORG_SHORT || "",
+      organization: process.env.ORG_NAME || "",
+      username,
     });
   } catch (error) {
     console.error(`Error: ${error}`);
