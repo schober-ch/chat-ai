@@ -524,6 +524,10 @@ export default {
       note1: "Note: Chatbots are prone to",
       note2: "and their responses should not be considered accurate.",
       note3: "Hallucination",
+      note4:
+        "This service is experimental and is provided using spare capacity of the",
+      note5: "HexHPC",
+      note6: "cluster.",
     },
     // External models
     settings_external:

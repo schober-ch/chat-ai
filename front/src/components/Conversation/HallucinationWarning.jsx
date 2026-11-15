@@ -34,7 +34,18 @@ export default function HallucinationWarning() {
           <Trans i18nKey="alert.hallucination.note3" />
           &nbsp;
         </Link>
-        <Trans i18nKey="alert.hallucination.note2" />
+        <Trans i18nKey="alert.hallucination.note2" />{" "}
+        <Trans i18nKey="alert.hallucination.note4" />
+        <Link
+          to="https://hexhpc.th-deg.de"
+          target="_blank"
+          className="text-tertiary"
+        >
+          &nbsp;
+          <Trans i18nKey="alert.hallucination.note5" />
+          &nbsp;
+        </Link>
+        <Trans i18nKey="alert.hallucination.note6" />
       </p>
       <X
         className="h-[20px] min-w-[20px] cursor-pointer text-[#009EE0]"

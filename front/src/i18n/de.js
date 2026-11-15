@@ -528,6 +528,10 @@ export default {
       note1: "Hinweis: Chatbots sind anfällig für",
       note2: "und ihre Antworten sollten nicht als korrekt angesehen werden.",
       note3: "Halluzination",
+      note4:
+        "Dieser Dienst ist experimentell und wird mit freien Kapazitäten des Clusters",
+      note5: "HexHPC",
+      note6: "betrieben.",
     },
     // External models
     settings_external:
