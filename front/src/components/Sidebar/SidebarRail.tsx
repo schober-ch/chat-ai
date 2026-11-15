@@ -57,7 +57,7 @@ export default function SidebarRail({
             <img
               className="absolute inset-0 object-contain transition-opacity duration-200 group-hover:opacity-0"
               src={ChatAiLogoMini}
-              alt="Chat AI Logo"
+              alt="THD Chat AI Logo"
             />
 
             {/* Chevron Button */}

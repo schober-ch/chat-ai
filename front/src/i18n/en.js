@@ -35,7 +35,7 @@ export default {
     fork: "Continue in a new chat",
     backup_data: "Backup Data",
     skip_backup: "Skip Backup",
-    upgrade_chat_ai: "Upgrade Chat AI",
+    upgrade_chat_ai: "Upgrade THD Chat AI",
   },
   feedback:{
     thumbsup:"The response is good.",
@@ -146,7 +146,7 @@ export default {
     },
     reset_default: "Reset default",
     default: "Default",
-    tools_title: "GWDG Tools",
+    tools_title: "THD Tools",
     chat_settings: "Chat settings",
     label_web_search: "Web Search",
     label_image_generation: "Image Generation",
@@ -210,8 +210,7 @@ export default {
     faq: "FAQ",
     contact: "Contact Us",
     about: "About",
-    copyright: "{{year}} GWDG  ©  All Rights Reserved",
-    iso_certified: "ISO 27001 Certified",
+    copyright: "{{year}} Technische Hochschule Deggendorf © All Rights Reserved",
   },
   // User Settings Modal
   user_settings: {
@@ -232,7 +231,7 @@ export default {
       memories: {
         label: "Memories",
         title: "Saved memories",
-        description: "Review and manage details Chat AI has learned.",
+        description: "Review and manage details THD Chat AI has learned.",
       },
       data: {
         label: "Data",
@@ -261,7 +260,7 @@ export default {
         "These preferences apply to every conversation on this device.",
       memory: {
         label: "Memory",
-        description: "Choose how Chat AI uses your saved memories.",
+        description: "Choose how THD Chat AI uses your saved memories.",
         help_label: "Learn about memory",
         options: {
           none: {
@@ -405,13 +404,13 @@ export default {
   help: {
     title: "Help",
     choiceproposer:
-      "When enabled, Chat AI suggests relevant follow-up prompts after each response. This preference applies to every conversation on this device.",
+      "When enabled, THD Chat AI suggests relevant follow-up prompts after each response. This preference applies to every conversation on this device.",
     arcana:
       "Arcana is a unique feature of our service that empowers the LLM with specialized knowledge. When you enter a valid Arcana ID and its corresponding key, the LLM gains access to the knowledge contained within that Arcana. This enables the model to generate responses that are more informed and relevant to your needs. Leave the ID empty to use the model without any specialized knowledge.",
-    mcp: "Enter the URL of your MCP (Model Context Protocol) Server (e.g., https://...). The MCP Server is a service that can provide the Chat AI with additional tools, data sources, or processing capabilities beyond its built‑in knowledge. By connecting to your specified MCP Server, the AI can interact with external systems, retrieve up‑to‑date or specialized information, and perform custom tasks according to the capabilities offered by that server.",
+    mcp: "Enter the URL of your MCP (Model Context Protocol) Server (e.g., https://...). The MCP Server is a service that can provide THD Chat AI with additional tools, data sources, or processing capabilities beyond its built‑in knowledge. By connecting to your specified MCP Server, the AI can interact with external systems, retrieve up‑to‑date or specialized information, and perform custom tasks according to the capabilities offered by that server.",
     models:
-      "Chat AI provides access to a range of state-of-the-art Large Language Models (LLMs), each with distinct capabilities and performance characteristics. This allows you to explore and select the model that best aligns with your research goals and requirements. \
-      Larger models typically offer higher-quality responses, but may have longer response times due to their increased complexity. Conversely, smaller models provide faster response times, but may sacrifice some accuracy and depth. With the list of available models, you can balance trade-offs between response quality and speed to suit your specific needs. For more details",
+      "THD Chat AI provides access to a range of state-of-the-art Large Language Models (LLMs), each with distinct capabilities and performance characteristics. This allows you to explore and select the model that best aligns with your research goals and requirements. \
+      Larger models typically offer higher-quality responses, but may have longer response times due to their increased complexity. Conversely, smaller models provide faster response times, but may sacrifice some accuracy and depth. With the list of available models, you can balance trade-offs between response quality and speed to suit your specific needs.",
     reasoning:
       "The reasoning setting determines how deeply the model processes and analyzes information before generating a response. A higher reasoning effort level means the model will spend more time carefully considering the context, weighing possible interpretations, and refining its internal thought process to produce a more accurate, nuanced, and well-structured answer. A lower reasoning effort prioritizes speed over depth, resulting in faster but potentially less thorough responses. Adjust this setting based on whether you need quick replies or more deliberate, high-quality outputs",
     memory:
@@ -421,7 +420,7 @@ export default {
     temperature:
       "A low temperature (e.g., 0-1) produces more predictable and logical responses, while higher temperatures (e.g., above 1) increase the possibility of more creative and unconventional responses. You can adjust the temperature setting to achieve different levels of predictability and creativity.",
     tools:
-      "Tools are a new and experimental feature designed to extend the capabilities of Chat AI. They allow the model to perform additional actions or access additional resources in order to provide more useful, accurate, or specialized responses. Current tools include Arcana (for all models) and Web Search (optional), with more tools planned for the future. As this feature is still evolving, functionality and available tools may change over time.",
+      "Tools are a new and experimental feature designed to extend the capabilities of THD Chat AI. They allow the model to perform additional actions or access additional resources in order to provide more useful, accurate, or specialized responses. Current tools include Arcana (for all models) and Web Search (optional), with more tools planned for the future. As this feature is still evolving, functionality and available tools may change over time.",
     web_search:
       "The web search tool allows the AI to look up the latest information from the internet to improve its responses. When enabled, the AI can generate search queries based on your question and the full conversation history, send them to a search engine (such as Google), and use the retrieved results to provide more accurate and up-to-date answers. This is especially useful for topics where current or rapidly changing information is important.",
     top_p:
@@ -438,28 +437,28 @@ export default {
   },
   // Tour
   tour: {
-    welcome_message: "Welcome to Chat AI",
+    welcome_message: "Welcome to THD Chat AI",
     start_tour: "Start Tour",
     skip_tour: "Skip tour",
     description:
       "Click the button below to begin the guided tour and explore the new user interface.",
     prompt:
-      "Simply enter your message here to start the conversation with Chat AI. You can attach files; the model will use it if it supports the file type.",
+      "Simply enter your message here to start the conversation with THD Chat AI. You can attach files; the model will use it if it supports the file type.",
     model:
       "Here you can select the model to chat with. Each model has its own characteristics, capabilities and limitations.",
     sidebar:
       "Create, remove, import, export, remove, search, and switch between conversations here. Organize your conversations with topics, and chat with pre-defined personas, if you like.",
     settings:
-      "Here you can adjust conversation-specific settings, including the system prompt, temperature, top_p, and GWDG tools such as Arcana, image generation, and web search. Tools may not work with all models.",
+      "Here you can adjust conversation-specific settings, including the system prompt, temperature, top_p, and THD tools such as Arcana, image generation, and web search. Tools may not work with all models.",
     profile:
       "This button will open your user profile, where you can set your preferences, manage saved memories, and export or clear your data.",
     interface:
-      "In this corner you can switch the theme and language of Chat AI.",
+      "In this corner you can switch the theme and language of THD Chat AI.",
     memory: {
-      off: "Memory - None: Chat AI won't remember anything from previous conversations, like before.",
+      off: "Memory - None: THD Chat AI won't remember anything from previous conversations, like before.",
       recall:
-        "Recall: Chat AI can use relevant memories about you from previous conversations, but won't memorize anything from the current conversation.",
-      on: "Learn: Chat AI actively learns stuff about you from the current conversation and also recalls memories it gained previously.",
+        "Recall: THD Chat AI can use relevant memories about you from previous conversations, but won't memorize anything from the current conversation.",
+      on: "Learn: THD Chat AI actively learns stuff about you from the current conversation and also recalls memories it gained previously.",
       settings:
         "You can always view, add, edit, and remove memories from the User Profile panel in the top-right corner. Memories are only stored locally in your browser.",
     },
@@ -494,11 +493,11 @@ export default {
     no: "No, go back",
     yes: "Yes, clear everything",
     system_prompt_empty: "System prompt is empty. Model may not respond.",
-    data_security_notice: "Your data will be processed securely within our servers. No information will be transmitted outside of the GWDG.",
+    data_security_notice: "Your data will be processed securely within our servers. No information will be transmitted outside of Technische Hochschule Deggendorf (THD).",
     data_security_warning: 
-      "You are using an external model or external tools. Your messages may be processed outside of GWDG. Custom settings and GWDG tools may not be available. Please refrain from entering confidential or personal data.",
+      "You are using an external model or external tools. Your messages may be processed outside of THD. Custom settings and THD tools may not be available. Please refrain from entering confidential or personal data.",
     data_security_warning_mpg:
-      "You are using an external model or external tools. Your messages may be processed outside of GWDG. Custom settings and GWDG tools may not be available. Please refrain from entering confidential or personal data. External models can only be used by scientific employees for scientific work, provided that no personal data is entered.",
+      "You are using an external model or external tools. Your messages may be processed outside of THD. Custom settings and THD tools may not be available. Please refrain from entering confidential or personal data. External models can only be used by scientific employees for scientific work, provided that no personal data is entered.",
     arcana_usage:
       "Keep temperature at 0 and top_p at 0.05 for optimal arcana results",
     arcana_create_collection_prefix:
@@ -518,7 +517,7 @@ export default {
       "You have attached files that will be lost. Are you sure you want to leave?",
     unprocessed_files: "Please process or remove the attached PDF to continue.",
     migrate_data:
-      "It looks like you're using an older version of Chat AI. To continue, your previous conversations and data need to be upgraded. Please back up your data first if needed, then press 'Upgrade' to start the process.",
+      "It looks like you're using an older version of THD Chat AI. To continue, your previous conversations and data need to be upgraded. Please back up your data first if needed, then press 'Upgrade' to start the process.",
     // Hallucination warning
     hallucination: {
       note1: "Note: Chatbots are prone to",
@@ -534,22 +533,22 @@ export default {
     import_web_search_disclaimer:
       `When Web Search is enabled, the AI may generate search queries based on your message and conversation history and send them to a search engine (e.g., Google).\n\nOnly allow this if you are comfortable with your data being processed externally and you will not share any confidential, personal, or sensitive information while Web Search is active.`,
     import_mcp_disclaimer:
-      `MCP servers can be hosted outside of GWDG. When enabled, the AI may send data to configured MCP servers to fulfill tool requests.\n\nOnly allow this if you trust the configured MCP servers and you will not share any confidential, personal, or sensitive information with them.`,
+      `MCP servers can be hosted outside of THD. When enabled, the AI may send data to configured MCP servers to fulfill tool requests.\n\nOnly allow this if you trust the configured MCP servers and you will not share any confidential, personal, or sensitive information with them.`,
     web_search_disclaimer: `When web search is enabled, the AI may generate search queries based on your message and the full conversation history, and send them to a search engine (e.g., Google) to retrieve up-to-date information. This helps provide more accurate and current responses.\n\nBy clicking “I Understand,” you agree that your input may be processed in this way and acknowledge that you will not share any confidential, personal, or sensitive information while web search is active.`,
   },
   // Landing page
   landing: {
     title: "You are not logged in",
-    description: "Please login to use Chat AI.",
+    description: "Please login to use THD Chat AI.",
     reasonsTitle: "You can login if you are:",
     reasons: {
       deleted: "• member of a German university or research institution",
       outdatedLink: "• member of an organization in DFN",
-      incorrectId: "• a registered user in AcademicCloud",
-      historyCleared: "• granted access by the GWDG",
+      incorrectId: "• a registered user at THD",
+      historyCleared: "• granted access by Technische Hochschule Deggendorf (THD)",
     },
     reassurance: "Simply use the button below to log in.",
-    buttonText: "Login with AcademicCloud SSO",
+    buttonText: "Login with THD SSO",
   },
   not_found: {
     title: "404: Conversation Not Found",

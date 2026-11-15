@@ -19,9 +19,9 @@ export const useTabTitle = () => {
         // chats created before it changed.
         const untitled =
           title === "Untitled Chat" || title === "Untitled Conversation";
-        document.title = untitled ? "Chat AI" : title + " - Chat AI";
+        document.title = untitled ? "THD Chat AI" : title + " - THD Chat AI";
       } else {
-        document.title = "Chat AI";
+        document.title = "THD Chat AI";
       }
     }, [currentConversationId, conversations]
   );

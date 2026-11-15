@@ -2,7 +2,6 @@
 import {
   faBookOpen,
   faBrain,
-  faCircleInfo,
   faChevronDown,
   faFilter,
   faImage,
@@ -157,24 +156,7 @@ export default function ModelSelectorSimple({ selectedModel, modelsData, onChang
         ? "bg-white dark:bg-bg_secondary_dark w-full rounded-2xl pb-2 flex min-h-0 flex-1 flex-col"
         : `${dropdownOpen ? "" : "hidden"} ${inHeader ? "fixed left-0 top-12 w-screen" : "absolute"} flex flex-col max-h-[80dvh] bg-white dark:bg-bg_secondary_dark z-50 mt-1 w-full rounded-2xl border border-slate-200 dark:border-gray-500  shadow-2xl dark:shadow-dark pb-4`}>
 
-        <div className="px-3 pt-3 pb-2 shrink-0">
-          <div className="flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-600 bg-slate-50 dark:bg-slate-800 px-3 py-2 text-xs text-slate-600 dark:text-slate-200">
-            <FontAwesomeIcon icon={faCircleInfo} className="text-tertiary" />
-            <span>
-              {t("model_selector.docs_hint_text")}{" "}
-              <a
-                className="text-tertiary underline font-medium"
-                href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                {t("model_selector.docs_hint_link")}
-              </a>
-            </span>
-          </div>
-        </div>
-        {/** Controls **/}
-        <div className={`text-sm flex items-center gap-2 p-2 border-b border-slate-100 dark:border-gray-500 shrink-0`}>
+        <div className="text-sm flex items-center gap-2 p-2 border-b border-slate-100 dark:border-gray-500 shrink-0">
           <div className="relative flex-1 min-w-0">
             <FontAwesomeIcon icon={faMagnifyingGlass} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
             <input

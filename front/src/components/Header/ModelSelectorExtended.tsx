@@ -19,8 +19,7 @@ import DemandIndicator from "./DemandIndicator";
 import type { ExtendedModelInfo } from "../../types/models";
 
 import {
-  faArrowUpAZ,
-  faCircleInfo
+  faArrowUpAZ
 } from "@fortawesome/free-solid-svg-icons";
 const sortOptions = [
   { value: "name-asc", label: "Name (A→Z)" },
@@ -350,23 +349,6 @@ export default function ModelSelectorSimple({ selectedModel, modelsData, onChang
         ? "bg-white dark:bg-bg_secondary_dark w-full rounded-2xl pb-2"
         : `${dropdownOpen ? "" : "hidden"} bg-white dark:bg-bg_secondary_dark absolute z-50 mt-1 w-full rounded-2xl border border-slate-200 dark:border-gray-500 shadow-2xl dark:shadow-dark pb-4`}>
 
-        <div className="px-4 pt-4 pb-2">
-          <div className="flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-600 bg-slate-50 dark:bg-slate-800 px-3 py-2 text-xs text-slate-600 dark:text-slate-200">
-            <FontAwesomeIcon icon={faCircleInfo} className="text-tertiary" />
-            <span>
-              {t("model_selector.docs_hint_text")}{" "}
-              <a
-                className="text-tertiary underline font-medium"
-                href="https://docs.hpc.gwdg.de/services/chat-ai/models/index.html"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                {t("model_selector.docs_hint_link")}
-              </a>
-            </span>
-          </div>
-        </div>
-        {/** Search Controls **/}
         <div className="text-sm flex items-center gap-2 p-2 border-b border-slate-100 dark:border-gray-500 to-white">
           <div className="relative flex-1">
             <FontAwesomeIcon icon={faMagnifyingGlass} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />

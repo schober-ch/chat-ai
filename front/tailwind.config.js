@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#B4388D",
-        secondary: "#695EA2",
+        primary: "#005293",
+        secondary: "#1D3C6A",
         tertiary: "#009EE0",
         dark_hover: "#333333",
         light_hover: "#efeff1",
@@ -36,12 +36,6 @@ export default {
         middle: { min: "801px", max: "1280px" },
         desktop: { min: "1281px" },
       },
-      backgroundImage: () => ({
-        "gwdg-logo-large": "url('../src/assets/logos/gwdg.png')",
-        "gwdg-logo-small": "url('../src/assets/logos/gwdg_sm.png')",
-        "kisski-logo-large": "url('../src/assets/logos/kisski.png')",
-        "kisski-logo-small": "url('../src/assets/logos/kisski_sm.png')",
-      }),
     },
   },
   plugins: [],

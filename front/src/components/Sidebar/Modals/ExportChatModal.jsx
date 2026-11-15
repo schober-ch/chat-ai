@@ -254,11 +254,11 @@ export default function ExportChatModal({
       // Initialize PDF document
       const doc = new jsPDF();
       doc.setProperties({
-        title: conversation?.title || "Chat AI Conversation", // TODO Replace with actual title
+        title: conversation?.title || "THD Chat AI Conversation",
         subject: "History",
-        author: "Chat AI",
+        author: "THD Chat AI",
         keywords: "AI-Generated",
-        creator: "GWDG",
+        creator: "Technische Hochschule Deggendorf",
       });
       doc.setFont("helvetica");
 

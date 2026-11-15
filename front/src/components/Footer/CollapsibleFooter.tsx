@@ -32,7 +32,7 @@ export default function CollapsibleFooter({ className }: { className?: string })
           {/* Imprint */}
           <Link
             to={
-              "https://gwdg.de/imprint/"
+              "https://www.th-deg.de/impressum"
             }
             target="_blank"
           >
@@ -43,7 +43,7 @@ export default function CollapsibleFooter({ className }: { className?: string })
           {/* Privacy Policy */}
           <Link
           to={
-              "https://docs.hpc.gwdg.de/services/chat-ai/data-privacy.de/index.html"
+              "https://www.th-deg.de/datenschutz"
           }
           target="_blank"
           >
@@ -51,35 +51,10 @@ export default function CollapsibleFooter({ className }: { className?: string })
               <Trans i18nKey="footer.privacy"></Trans>
           </p>
           </Link>
-          {/* Terms of use */}
-          <Link
-            to={
-              "https://docs.hpc.gwdg.de/services/chat-ai/terms_of_use.de/index.html"
-            }
-            target="_blank"
-          >
-            <p className="text-center whitespace-nowrap truncate text-blue-600 dark:text-blue-400 hover:underline">
-              <Trans i18nKey="footer.terms" />
-            </p>
-          </Link>
-          {/* Documentation */}
-          <Link
-            to={
-              "https://docs.hpc.gwdg.de/services/ai-services/chat-ai/index.html"
-            }
-            target="_blank"
-          >
-            <p className="text-center h-full text-blue-600 dark:text-blue-400 hover:underline">
-              <Trans i18nKey="footer.docs" />
-            </p>
-          </Link>
         </div>
 
         {/* Right section */}
         <div className="interface-toggles h-[3vh] top-0 flex items-center pr-3 gap-2"> 
-          <p className="hidden md:block text-center w-full flex flex-grow whitespace-nowrap overflow-visible text-gray-700 dark:text-purple-100">
-            <Trans i18nKey="footer.iso_certified" />
-          </p>
           <ThemeToggle />
           <LanguageSelector />
         </div>

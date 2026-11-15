@@ -7,7 +7,7 @@ export default function EmptyConversation() {
       <img
         className="max-w-[160px] sm:max-w-[200px] md:max-w-[240px] w-full object-contain filter opacity-80 grayscale drop-shadow-lg"
         src={Logo}
-        alt="Chat AI Logo"
+        alt="THD Chat AI Logo"
       />
     </div>
   );

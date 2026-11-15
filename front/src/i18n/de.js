@@ -35,7 +35,7 @@ export default {
     fork: "In neuem Chat fortfahren",
     backup_data: "Daten sichern",
     skip_backup: "Backup überspringen",
-    upgrade_chat_ai: "Chat AI aktualisieren",
+    upgrade_chat_ai: "THD Chat AI aktualisieren",
   },
   feedback:{
     thumbsup:"The response is good.",
@@ -142,7 +142,7 @@ export default {
     },
     reset_default: "Standard zurücksetzen",
     default: "Standard",
-    tools_title: "GWDG-Werkzeuge",
+    tools_title: "THD-Werkzeuge",
     chat_settings: "Chat-Einstellungen",
     label_web_search: "Websuche",
     label_image_generation: "Bildgenerierung",
@@ -207,8 +207,7 @@ export default {
     faq: "FAQ",
     contact: "Kontakt",
     about: "Über uns",
-    copyright: "{{year}} GWDG © Alle Rechte vorbehalten",
-    iso_certified: "ISO 27001 Zertifiziert",
+    copyright: "{{year}} Technische Hochschule Deggendorf © Alle Rechte vorbehalten",
   },
   // User Settings Modal
   user_settings: {
@@ -230,7 +229,7 @@ export default {
         label: "Erinnerungen",
         title: "Gespeicherte Erinnerungen",
         description:
-          "Prüfen und verwalten Sie die von Chat AI gespeicherten Details.",
+          "Prüfen und verwalten Sie die von THD Chat AI gespeicherten Details.",
       },
       data: {
         label: "Daten",
@@ -262,7 +261,7 @@ export default {
       memory: {
         label: "Erinnerungen",
         description:
-          "Legen Sie fest, wie Chat AI Ihre gespeicherten Erinnerungen verwendet.",
+          "Legen Sie fest, wie THD Chat AI Ihre gespeicherten Erinnerungen verwendet.",
         help_label: "Mehr über Erinnerungen erfahren",
         options: {
           none: {
@@ -407,13 +406,13 @@ export default {
   help: {
     title: "Hilfe",
     choiceproposer:
-      "Wenn diese Option aktiviert ist, zeigt Chat AI nach jeder Antwort passende Folgevorschläge an. Diese Einstellung gilt für alle Unterhaltungen auf diesem Gerät.",
+      "Wenn diese Option aktiviert ist, zeigt THD Chat AI nach jeder Antwort passende Folgevorschläge an. Diese Einstellung gilt für alle Unterhaltungen auf diesem Gerät.",
     arcana:
       "Arcana ist eine einzigartige Funktion unseres Dienstes, die das LLM mit spezialisiertem Wissen ausstattet. Wenn Sie eine gültige Arcana-ID und den entsprechenden Schlüssel eingeben, erhält das LLM Zugriff auf das in dieser Arcana enthaltene Wissen. Dies ermöglicht es dem Modell, Antworten zu generieren, die besser informiert und relevanter für Ihre Bedürfnisse sind. Lassen Sie das Feld für die ID leer, um das Modell ohne spezialisiertes Wissen zu verwenden.",
     mcp: "Bitte geben Sie die URL Ihres MCP (Model Context Protocol) Servers ein (z. B. https://...). Der MCP-Server ist ein Dienst, der der Chat-AI zusätzliche Werkzeuge, Datenquellen oder Verarbeitungskapazitäten bereitstellen kann, die über ihr eingebautes Wissen hinausgehen. Durch die Verbindung mit dem angegebenen MCP-Server kann die KI mit externen Systemen interagieren, aktuelle oder spezialisierte Informationen abrufen und benutzerdefinierte Aufgaben entsprechend den angebotenen Funktionen ausführen.",
     models:
-      "Chat AI bietet Zugriff auf eine Palette von state-of-the-art Large Language Models (LLMs), jedes mit eigenen Fähigkeiten und Leistungsmerkmalen. Dies ermöglicht es Ihnen, den Modelltyp auszuwählen, der am besten Ihren Forschungszielen und Anforderungen entspricht.\
-      Größere Modelle bieten typischerweise höhere Antwortqualitäten, aber haben aufgrund ihrer erhöhten Komplexität längere Antwortzeiten. Umgekehrt bieten kleinere Modelle schnellere Antwortzeiten, mögen jedoch einige Genauigkeit und Tiefe opfern. Mit der Liste der verfügbaren Modelle können Sie Abwägungen zwischen Antwortqualität und Geschwindigkeit treffen, um Ihren spezifischen Bedürfnissen gerecht zu werden. Für weitere Einzelheiten",
+      "THD Chat AI bietet Zugriff auf eine Palette von state-of-the-art Large Language Models (LLMs), jedes mit eigenen Fähigkeiten und Leistungsmerkmalen. Dies ermöglicht es Ihnen, den Modelltyp auszuwählen, der am besten Ihren Forschungszielen und Anforderungen entspricht.\
+      Größere Modelle bieten typischerweise höhere Antwortqualitäten, aber haben aufgrund ihrer erhöhten Komplexität längere Antwortzeiten. Umgekehrt bieten kleinere Modelle schnellere Antwortzeiten, mögen jedoch einige Genauigkeit und Tiefe opfern. Mit der Liste der verfügbaren Modelle können Sie Abwägungen zwischen Antwortqualität und Geschwindigkeit treffen, um Ihren spezifischen Bedürfnissen gerecht zu werden.",
     reasoning:
       "Die Reasoning-Einstellung bestimmt, wie tief das Modell Informationen verarbeitet und analysiert, bevor es eine Antwort generiert. Ein höherer Reasoning-Aufwand bedeutet, dass das Modell mehr Zeit darauf verwendet, den Kontext sorgfältig zu prüfen, mögliche Interpretationen abzuwägen und seinen internen Denkprozess zu verfeinern, um eine präzisere, differenziertere und besser strukturierte Antwort zu erzeugen. Ein niedrigerer Reasoning-Aufwand priorisiert Geschwindigkeit über Tiefe, was zu schnelleren, aber möglicherweise weniger gründlichen Antworten führt. Passen Sie diese Einstellung an, je nachdem, ob Sie schnelle Antworten oder sorgfältig ausgearbeitete, hochwertige Ergebnisse benötigen.",
     memory:
@@ -440,28 +439,28 @@ export default {
   },
   // Tour
   tour: {
-    welcome_message: "Willkommen bei Chat AI",
+    welcome_message: "Willkommen bei THD Chat AI",
     start_tour: "Tour starten",
     skip_tour: "Tour überspringen",
     description:
       "Klicken Sie auf die Schaltfläche unten, um die geführte Tour zu starten und die neue Benutzeroberfläche zu erkunden.",
     prompt: 
-      "Geben Sie hier einfach Ihre Nachricht ein, um die Unterhaltung mit Chat AI zu starten. Sie können Dateien anhängen; das Modell wird sie verwenden, sofern der Dateityp unterstützt wird.",
+      "Geben Sie hier einfach Ihre Nachricht ein, um die Unterhaltung mit THD Chat AI zu starten. Sie können Dateien anhängen; das Modell wird sie verwenden, sofern der Dateityp unterstützt wird.",
     model:
       "Hier können Sie das Modell auswählen, mit dem Sie chatten möchten. Jedes Modell hat seine eigenen Eigenschaften, Fähigkeiten und Einschränkungen.", 
     sidebar:
       "Hier können Sie Unterhaltungen erstellen, löschen, importieren, exportieren, durchsuchen und zwischen ihnen wechseln. Organisieren Sie Ihre Unterhaltungen in Themen und chatten Sie auf Wunsch mit vordefinierten Personas.",
     settings:
-      "Hier können Sie unterhaltungsspezifische Einstellungen wie System-Prompt, Temperatur, Top_p und GWDG-Tools wie Arcana, Bildgenerierung und Websuche anpassen. Tools funktionieren möglicherweise nicht mit allen Modellen.",
+      "Hier können Sie unterhaltungsspezifische Einstellungen wie System-Prompt, Temperatur, Top_p und THD-Tools wie Arcana, Bildgenerierung und Websuche anpassen. Tools funktionieren möglicherweise nicht mit allen Modellen.",
     profile:
       "Diese Schaltfläche öffnet Ihr Benutzerprofil, in dem Sie Ihre Einstellungen festlegen, gespeicherte Erinnerungen verwalten sowie Ihre Daten exportieren oder löschen können.",
     interface:
-      "In dieser Ecke können Sie das Design und die Sprache von Chat AI wechseln.",
+      "In dieser Ecke können Sie das Design und die Sprache von THD Chat AI wechseln.",
     memory: {
-      off: "Memory - None: Chat AI erinnert sich an nichts aus früheren Gesprächen, wie zuvor.",
+      off: "Memory - None: THD Chat AI erinnert sich an nichts aus früheren Gesprächen, wie zuvor.",
       recall:
-        "Recall: Chat AI kann relevante Erinnerungen über Sie aus früheren Gesprächen nutzen, erinnert sich aber an nichts aus dem aktuellen Gespräch.",
-      on: "Learn: Chat AI lernt aktiv Dinge über Sie aus dem aktuellen Gespräch und ruft auch Erinnerungen ab, die sie zuvor gesammelt hat.",
+        "Recall: THD Chat AI kann relevante Erinnerungen über Sie aus früheren Gesprächen nutzen, erinnert sich aber an nichts aus dem aktuellen Gespräch.",
+      on: "Learn: THD Chat AI lernt aktiv Dinge über Sie aus dem aktuellen Gespräch und ruft auch Erinnerungen ab, die sie zuvor gesammelt hat.",
       settings:
         "Sie können Erinnerungen jederzeit im Benutzerprofil-Panel in der oberen rechten Ecke ansehen, hinzufügen, bearbeiten und entfernen. Erinnerungen werden nur lokal in Ihrem Browser gespeichert.",
     },
@@ -495,11 +494,11 @@ export default {
     no: "Nein, geh zurück",
     yes: "Ja, alles löschen",
     system_prompt_empty: "System-Prompt ist leer. Modell reagiert evtl. nicht.",
-    data_security_warning: 
-      "Sie verwenden ein externes Modell oder externe Tools. Ihre Nachrichten können außerhalb der GWDG verarbeitet werden. Benutzerdefinierte Einstellungen und GWDG-Tools sind möglicherweise nicht verfügbar. Bitte unterlassen Sie die Eingabe vertraulicher oder personenbezogener Daten.",
+    data_security_warning:
+      "Sie verwenden ein externes Modell oder externe Tools. Ihre Nachrichten können außerhalb der THD verarbeitet werden. Benutzerdefinierte Einstellungen und THD-Tools sind möglicherweise nicht verfügbar. Bitte unterlassen Sie die Eingabe vertraulicher oder personenbezogener Daten.",
     data_security_warning_mpg:
-      "Sie verwenden ein externes Modell oder externe Tools. Ihre Nachrichten können außerhalb der GWDG verarbeitet werden. Benutzerdefinierte Einstellungen und GWDG-Tools sind möglicherweise nicht verfügbar. Bitte unterlassen Sie die Eingabe vertraulicher oder personenbezogener Daten. Externe Modelle sind nur nutzbar für wissenschaftliche Beschäftigte für wissenschaftliche Arbeiten, sofern keine personenbezogenen Daten eingegeben werden.",
-    data_security_notice: "Ihre Daten werden sicher innerhalb unserer Server verarbeitet. Es werden keine Informationen außerhalb der GWDG übertragen.",
+      "Sie verwenden ein externes Modell oder externe Tools. Ihre Nachrichten können außerhalb der THD verarbeitet werden. Benutzerdefinierte Einstellungen und THD-Tools sind möglicherweise nicht verfügbar. Bitte unterlassen Sie die Eingabe vertraulicher oder personenbezogener Daten. Externe Modelle sind nur nutzbar für wissenschaftliche Beschäftigte für wissenschaftliche Arbeiten, sofern keine personenbezogenen Daten eingegeben werden.",
+    data_security_notice: "Ihre Daten werden sicher innerhalb unserer Server verarbeitet. Es werden keine Informationen außerhalb der Technischen Hochschule Deggendorf (THD) übertragen.",
     arcana_usage:
       "Halten Sie Temperatur auf 0 und top_p auf 0.05 für optimale Arcana-Ergebnisse",
     arcana_create_collection_prefix:
@@ -522,7 +521,7 @@ export default {
     unprocessed_files:
       "Bitte verarbeiten oder entfernen Sie das beigefügte PDF, um fortzufahren.",
     migrate_data:
-      "Es sieht so aus, als ob Sie eine ältere Version von Chat AI verwenden. Um fortzufahren, müssen Ihre vorherigen Gespräche und Daten aktualisiert werden. Bitte sichern Sie Ihre Daten zuerst, falls erforderlich, und drücken Sie dann auf 'Aktualisieren', um den Prozess zu starten.",
+      "Es sieht so aus, als ob Sie eine ältere Version von THD Chat AI verwenden. Um fortzufahren, müssen Ihre vorherigen Gespräche und Daten aktualisiert werden. Bitte sichern Sie Ihre Daten zuerst, falls erforderlich, und drücken Sie dann auf 'Aktualisieren', um den Prozess zu starten.",
     // Hallucination warning
     hallucination: {
       note1: "Hinweis: Chatbots sind anfällig für",
@@ -538,23 +537,23 @@ export default {
     import_web_search_disclaimer:
       `Wenn die Websuche aktiviert ist, kann die KI auf Grundlage Ihrer Nachricht und des Gesprächsverlaufs Suchanfragen erstellen und diese an eine Suchmaschine (z. B. Google) senden.\n\nErlauben Sie dies nur, wenn Sie damit einverstanden sind, dass Ihre Daten extern verarbeitet werden, und wenn Sie während der aktiven Websuche keine vertraulichen, persönlichen oder sensiblen Informationen teilen.`,
     import_mcp_disclaimer:
-      `MCP-Server können außerhalb der GWDG betrieben werden. Wenn aktiviert, kann die KI Daten an konfigurierte MCP-Server senden, um Tool-Anfragen auszuführen.\n\nErlauben Sie dies nur, wenn Sie den konfigurierten MCP-Servern vertrauen und keine vertraulichen, persönlichen oder sensiblen Informationen mit ihnen teilen.`,
+      `MCP-Server können außerhalb der THD betrieben werden. Wenn aktiviert, kann die KI Daten an konfigurierte MCP-Server senden, um Tool-Anfragen auszuführen.\n\nErlauben Sie dies nur, wenn Sie den konfigurierten MCP-Servern vertrauen und keine vertraulichen, persönlichen oder sensiblen Informationen mit ihnen teilen.`,
     web_search_disclaimer: `Wenn die Websuche aktiviert ist, kann die KI auf Grundlage Ihrer Nachricht und des gesamten Gesprächsverlaufs Suchanfragen erstellen und diese an eine Suchmaschine (z. B. Google) senden, um aktuelle Informationen abzurufen. Dies hilft, genauere und aktuellere Antworten bereitzustellen.\n\nDurch Klicken auf „Ich verstehe“ stimmen Sie zu, dass Ihre Eingaben auf diese Weise verarbeitet werden, und bestätigen, dass Sie während der aktiven Websuche keine vertraulichen, persönlichen oder sensiblen Informationen teilen.`,
   },
   // Landing page
   landing: {
     title: "Sie sind nicht angemeldet",
-    description: "Bitte melden Sie sich an, um Chat AI zu verwenden.",
+    description: "Bitte melden Sie sich an, um THD Chat AI zu verwenden.",
     reasonsTitle: "Sie können sich anmelden, wenn Sie:",
     reasons: {
       deleted:
         "• Mitglied einer deutschen Universität oder Forschungseinrichtung sind",
       outdatedLink: "• Mitglied einer Organisation im DFN sind",
-      incorrectId: "• ein registrierter Benutzer in AcademicCloud sind",
-      historyCleared: "• von der GWDG Zugriff gewährt wurde",
+      incorrectId: "• ein registrierter Benutzer an der THD sind",
+      historyCleared: "• von der Technischen Hochschule Deggendorf (THD) Zugriff gewährt wurde",
     },
     reassurance: "Verwenden Sie einfach den Button unten, um sich anzumelden.",
-    buttonText: "Anmelden mit AcademicCloud SSO",
+    buttonText: "Anmelden mit THD SSO",
   },
   not_found: {
     title: "404: Unterhaltung nicht gefunden",

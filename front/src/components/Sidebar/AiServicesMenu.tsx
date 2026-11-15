@@ -1,7 +1,6 @@
 import { Popover, PopoverButton, PopoverPanel, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import Logo from '../../assets/logos/chat_ai.svg'
-import LogoSmall from '../../assets/logos/chat_ai_small.ico'
 import ImageAiLogo from '../../assets/logos/image-ai.svg'
 import VoiceAiLogo from '../../assets/logos/voice-ai.svg'
 
@@ -22,14 +21,6 @@ const items = [
       <img className="h-8 w-auto object-contain mx-auto" src={VoiceAiLogo} alt="Voice AI Logo" />
     ),
   },
-  {
-    name: 'RAG-Manager',
-    description: 'Vector database management',
-    href: 'https://chat-ai.academiccloud.de/arcanas/',
-    icon: (
-      <img className="h-9 w-auto object-contain mx-auto" src={LogoSmall} alt="RAG Manager Logo" />
-    ),
-  },
 ]
 
 export default function AiServicesMenu() {
@@ -39,7 +30,7 @@ export default function AiServicesMenu() {
         aria-label="Open AI services menu"
         className="focus:outline-none m-1 p-2 inline-flex items-center rounded-xl hover:bg-slate-50 dark:hover:bg-gray-700 cursor-pointer transition-colors duration-150 "
       >
-        <img className="h-10 w-auto object-contain" src={Logo} alt="Chat AI Logo" />
+        <img className="h-10 w-auto object-contain" src={Logo} alt="THD Chat AI Logo" />
       </PopoverButton>
 
       <Transition
