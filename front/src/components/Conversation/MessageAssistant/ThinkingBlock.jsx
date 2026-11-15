@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, memo } from "react";
+import { useState, useRef, memo } from "react";
 import { Trans } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -25,35 +25,20 @@ const remarkHtmlAsText = () => (tree) => {
 
 const ThinkingBlock = memo(
   ({ children, autoExpand = false, isStreaming = false, renderContent }) => {
-    const [isOpen, setIsOpen] = useState(autoExpand && isStreaming);
-    const [autoOpened, setAutoOpened] = useState(autoExpand && isStreaming);
+    // Start collapsed by default; user can expand to view reasoning.
+    const [isOpen, setIsOpen] = useState(false);
     const contentRef = useRef(null);
 
-    // Auto-open while the model is still "thinking", then collapse once done unless
-    // the user has explicitly toggled it.
-    useEffect(() => {
-      if (autoExpand && isStreaming) {
-        setIsOpen(true);
-        setAutoOpened(true);
-      } else if (!isStreaming && autoOpened) {
-        setIsOpen(false);
-        setAutoOpened(false);
-      }
-    }, [autoExpand, isStreaming, autoOpened]);
+    // Legacy autoExpand parameter is ignored: reasoning stays collapsed unless
+    // the user explicitly opens it.
 
     return (
       <div className="my-4 rounded-lg border border-tertiary">
         <button
-          onClick={() => {
-            if (!isStreaming) {
-              setIsOpen(!isOpen);
-              setAutoOpened(false);
-            }
-          }}
-          className="rounded-lg cursor-pointer flex items-center w-full p-3 text-xs bg-blue-50 dark:bg-blue-900/30 rounded-t-lg hover:bg-blue-100 dark:hover:bg-blue-900/50 disabled:opacity-70"
+          onClick={() => setIsOpen(!isOpen)}
+          className="rounded-lg cursor-pointer flex items-center w-full p-3 text-xs bg-blue-50 dark:bg-blue-900/30 rounded-t-lg hover:bg-blue-100 dark:hover:bg-blue-900/50"
           aria-expanded={isOpen}
           aria-controls="thinking-content"
-          disabled={isStreaming}
         >
           {isOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
           <Brain size={16} className="ml-2 mr-2" />
