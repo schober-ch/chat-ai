@@ -7,3 +7,4 @@ Rebrand Chat AI as **THD Chat AI** for Technische Hochschule Deggendorf (THD):
 - Updated `back/service.mjs` `GET /user` to read `OIDC_CLAIM_name`, `OIDC_CLAIM_preferred_username`, `OIDC_CLAIM_email` headers (returning `401` when `username` is missing) and `ORG_SHORT` / `ORG_NAME` environment variables.
 - Disabled the GWDG/AcademicCloud AI services dropdown on the sidebar logo (`AiServicesMenu.tsx`) and added an `API Keys` (`/keys`) self-service portal link to the sidebar (`SidebarContent.tsx`, `SidebarRail.tsx`).
 - Added an experimental-service notice to the hallucination warning, stating the service runs on spare capacity of the [HexHPC](https://hexhpc.th-deg.de) cluster (`HallucinationWarning.jsx`, en/de i18n).
+- **Reasoning/thinking block now collapsed by default** — the toggle is always clickable, letting users expand reasoning on demand instead of auto-opening during streaming (`ThinkingBlock.jsx`).
