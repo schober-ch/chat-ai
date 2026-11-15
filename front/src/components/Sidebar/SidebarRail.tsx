@@ -6,7 +6,7 @@ import {
 import { useTranslation } from "react-i18next";
 import ChatAiLogoMini from "../../assets/logos/chat_ai_small.ico";
 
-import { ChevronRight, HorizontalLineSolid } from "@carbon/icons-react";
+import { ChevronRight, HorizontalLineSolid, Key } from "@carbon/icons-react";
 import { useWindowSize } from "../../hooks/useWindowSize";
 import ImportConversationButton from "./Buttons/ImportChatButton";
 import { useModal } from "../../modals/ModalContext";
@@ -124,6 +124,18 @@ export default function SidebarRail({
             variant={"rail"}
           />
           <HorizontalLineSolid size={30} className="text-gray-200 dark:text-gray-600" />
+          {/* API Keys self-service portal */}
+          <ShortcutTooltip label={t("sidebar.api_keys")} position="right" enterDelay={150}>
+            <a
+              href="/keys"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={t("sidebar.api_keys")}
+              className="p-2.5 rounded-2xl text-tertiary hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary/50"
+            >
+              <Key size={20} />
+            </a>
+          </ShortcutTooltip>
           {/* User card */}
           <div
               role="button"

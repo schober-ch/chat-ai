@@ -7,6 +7,8 @@ import { useNavigate } from "react-router";
 import {
   ChevronLeft,
   FolderMoveTo,
+  Key,
+  Launch,
   OverflowMenuVertical,
   Search,
   Close,
@@ -594,6 +596,16 @@ export default function SidebarContent({
                 <OrgLimitsDisplay limits={userData.limits} variant="sidebar" />
               </div>
             )}
+            <a
+              href="/keys"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800/70 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary/50"
+            >
+              <Key size={16} className="text-tertiary shrink-0" />
+              <span>{t("sidebar.api_keys")}</span>
+              <Launch size={14} className="ml-auto opacity-60 shrink-0" />
+            </a>
             <SidebarUserCard
               localState={localState}
               userData={userData}

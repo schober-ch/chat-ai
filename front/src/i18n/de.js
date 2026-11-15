@@ -53,6 +53,7 @@ export default {
     rename_tooltip: "Umbenennen: {{title}}",
     shortcut_new_conversation: "Strg + Shift + O",
     user_section: "Benutzer",
+    api_keys: "API-Schlüssel",
   },
   folders: {
     title: "Chats",
